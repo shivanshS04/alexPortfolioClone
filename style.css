@@ -6,6 +6,7 @@ body{
     position: absolute ;
     overflow-x: hidden;
     background-color: black;
+    z-index: -1;
 }
 #fixedBtns{
     position: fixed;
@@ -50,6 +51,38 @@ body{
 #page1 h1:hover{
     text-decoration: underline;
 }
+
+
+
+#heading{
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    width: 65%;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#page1 #heading .line p {
+    color:white;
+    font-size : 8vw;
+    font-family: sans-serif;
+    margin-left:1rem;
+    margin:0rem;
+    text-transform: uppercase;
+    
+}
+.line p{
+    transition: all 0.3s linear;
+    
+}
+#heading:has(.fancy:hover) .word:not(.fancy:hover){
+    opacity: 0.2;
+}
+
 #bottomDiv{
     display: flex;
     flex-direction: row;
